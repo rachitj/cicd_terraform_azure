@@ -20,22 +20,21 @@ Please refer architecture.md
 
 Please follow Setup.md for more information
 
-# ignored Files
+# Ignored Files
 
-The .gitignore file includes:
+Please add the ignore files before initializing the terraform, else git can track terraform state and can included unnecessary large files. The .gitignore file includes:
 
-_.config: Configuration files that may contain sensitive information.
-launch.json: VS Code configuration file for debugging settings.
-log.txt: Log files.
-_.env: Environment files that may contain sensitive information.
-_.pyc: Compiled Python files.
-_.tfvars: Terraform variables file that may contain sensitive information.
-_.tfstate_: Terraform state files that may contain sensitive information.
-_.out: Output files.
-_.lock\*: Lock files.
-.terraform: Terraform directory that contains downloaded provider plugins and other temporary data.
-venv: Python virtual environment directory.
-.idea: JetBrains IDE settings directory.
+- .config: Configuration files that may contain sensitive information.
+- launch.json: VS Code configuration file for debugging settings.
+- log.txt: Log files if any.
+- \*.env: Environment files that may contain sensitive information.
+- \*.pyc: Compiled Python files.
+- \*.tfvars: Terraform variables file that may contain sensitive information.
+- \*.tfstate : Terraform state files that may contain sensitive information.
+- \*.out: Output files.
+- \*.lock\*: Lock files.
+- .terraform: Terraform directory that contains downloaded provider plugins and other temporary data.
+- venv: Python virtual environment directory.
 
 # Budget Alert
 
