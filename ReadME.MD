@@ -4,17 +4,34 @@ This project uses Terraform to automate the deployment of resources on Azure, in
 
 Creating this repository for IAC(Infrastructure as code) for provisioning of Azure services related to Azure Data Factory.
 
-# Prerequisites
+## Budget Alert
+
+This project includes the setup of a budget alert on Azure. This alert will notify you when your Azure spending exceeds a certain threshold, helping you to monitor and control your costs.
+
+```mermaid
+sequenceDiagram
+    participant Azure
+    participant Terraform
+    participant Resources
+    participant BudgetAlert
+
+    Azure->>Terraform: Provision Infrastructure
+    Terraform->>Resources: Create Resources
+    Resources->>BudgetAlert: Set Budget Alert
+
+```
+
+## System Architecture
+
+Please refer architecture.md
+![Architecture Diagram](image.png)
+
+## Prerequisites
 
 1. Azure account with subscription
 2. Azure CLi authentication or Application Object authentication(preferred)
 3. Terraform CLi
 4. Any IDE
-
-# Architecture
-
-Please refer architecture.md
-![Architecture Diagram](image.png)
 
 # Setup
 
@@ -36,13 +53,9 @@ Please add the ignore files before initializing the terraform, else git can trac
 - .terraform: Terraform directory that contains downloaded provider plugins and other temporary data.
 - venv: Python virtual environment directory.
 
-# Budget Alert
-
-This project includes the setup of a budget alert on Azure. This alert will notify you when your Azure spending exceeds a certain threshold, helping you to monitor and control your costs.
-
 Happy Learning !
 DataForgeMaster
 
-## References:
+### References:
 
 CodeWithYu
