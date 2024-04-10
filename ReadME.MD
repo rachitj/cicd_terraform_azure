@@ -1,4 +1,4 @@
-# Project Title: Terraform Azure Deployment with Budget Alert
+# Project : Terraform Azure Deployment with Budget Alert
 
 This project uses Terraform to automate the deployment of resources on Azure, including setting up a budget alert to monitor and control Azure spending. It's designed to provide a simple and efficient way to manage and provision cloud infrastructure.
 
