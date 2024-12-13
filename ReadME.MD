@@ -1,5 +1,5 @@
 # Project : Terraform Azure Deployment with Budget Alert
-
+![](https://github.com/rachitj/cicd_terraform_azure/blob/main/project-1.png)
 This project uses Terraform to automate the deployment of resources on Azure, including setting up a budget alert to monitor and control Azure spending. It's designed to provide a simple and efficient way to manage and provision cloud infrastructure.
 
 Creating this repository for IAC(Infrastructure as code) for provisioning of Azure services related to Azure Data Factory.
